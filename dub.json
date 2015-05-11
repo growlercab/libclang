@@ -5,17 +5,18 @@
     "license": "LLVM Release License",
     "sourcePaths":["."],
     "libs": ["clang"],
-    "excludedSourceFiles":["libclang-example.d"],
+    "excludedSourceFiles":["libclang_example.d"],
     "configurations":[
         {
             "name":"lib",
             "targetType":"sourceLibrary"
         },
         {
-            "name":"libclang-example",
+            "name":"example",
             "targetName":"libclang-example",
             "targetType":"executable",
-            "sourceFiles":["libclang-example.d"]
+            "targetPath":"./build/",
+            "sourceFiles":["libclang_example.d"]
         }
     ]
 }

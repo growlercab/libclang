@@ -1,3 +1,4 @@
+libclang-build
 .dub
 docs.json
 __dummy.html
@@ -5,3 +6,4 @@ __dummy.html
 *.obj
 *.swp
 *.swo
+
