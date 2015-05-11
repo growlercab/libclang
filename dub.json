@@ -1,0 +1,21 @@
+{
+    "name": "libclang",
+    "description": "D bindings for libclang.",
+    "homepage": "http://clang.llvm.org/",
+    "license": "LLVM Release License",
+    "sourcePaths":["."],
+    "libs": ["clang"],
+    "excludedSourceFiles":["libclang-example.d"],
+    "configurations":[
+        {
+            "name":"lib",
+            "targetType":"sourceLibrary"
+        },
+        {
+            "name":"libclang-example",
+            "targetName":"libclang-example",
+            "targetType":"executable",
+            "sourceFiles":["libclang-example.d"]
+        }
+    ]
+}
